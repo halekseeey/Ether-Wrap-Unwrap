@@ -1,0 +1,68 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .box {
+        width: 420px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 20px;
+        background-color: #ededed;
+    }
+
+    .amountInput {
+        width: 400px;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: space-between;
+
+        button {
+            flex: 1;
+        }
+
+        button:not(:last-child) {
+            margin-right: 10px;
+        }
+
+        button:disabled {
+            background-color: #c2bfbf;
+            cursor: not-allowed;
+        }
+    }
+
+    .error {
+        color: red;
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+.balanceInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .balance {
+        flex: 1;
+
+        .title {
+            margin-bottom: 0px;
+        }
+        .currency {
+            margin: 0;
+        }
+    }
+
+    .price {
+        flex: 1;
+        text-align: right;
+    }
+}
